@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=cyrillic" rel="stylesheet">
+	<title>Работа в Израиле</title>
+	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="theme-color" content="#92c5db">
+</head>
+<body>
+	<header class="header_main_flex"><!-- Main Header -->
+		<div class="logo_top">
+			<img src="image/logo.png" alt="Логотип">
+		</div>
+		<nav class="menu_top">
+			<ul class="menu_flex">
+				<li><a href="#section-2">Вакансии</a></li>
+				<li><a href="#section-4">4 шага</a></li>
+				<li><a href="#section-5">6 причин</a></li>
+				<li><a href="#section-6">Выгода</a></li>
+				<li><a href="#section-8">Гарантии</a></li>
+				<li><a href="#section-9">Сроки</a></li>
+			</ul>
+		</nav>
+		<div class="phone_top">
+			<span>+38 098 361 49 83</span>
+			<button type="button" class="header_popup_show" onclick="popUpShow()">перезвоните мне</button>
+		</div>
+	</header>
+	<section id="section-1"><!-- Top Form -->
+		<h1>Трудоустройство</h1>
+		<h3>в Израиле</h3>
+		<p>Зарплата от <span>1500$</span> до <span>2500$</span></p>
+		<h3>Успейте оставить заявку!</h3>
+		<form method="post" id="form1" class="form">
+			<fieldset form="form1">
+				<legend>Оставьте заявку и мы обязательно Вам перезвоним</legend>
+				<input type="text" name="name" placeholder="Введите ваше имя" required>
+				<input type="tel" name="phone" placeholder="Введите ваш телефон: (xxx) xxx xxxx" title="Формат ввода: (xxx) xxx xxxx" pattern="\([0-9]{3}\)\s[0-9]{3}\s[0-9]{4}" required>
+				<input type="email" name="email" placeholder="Введите ваш email" title="Введите действующий email" required>
+			</fieldset>
+			<input type="submit" name="submit" value="Оставить Заявку">
+		</form>
+	</section>
+	<section id="section-2" class="prof1"><!-- Vacancies -->
+		<h2>Самые популярные вакансии в Израиле</h2>
+		<nav class="menu_vacancies">
+			<ul class="vacancies menu_flex">
+				<li><a href="#prof1" class="prof1 selected">Разнорабочий</a></li>
+				<li><a href="#prof2" class="prof2">Сварщик</a></li>
+				<li><a href="#prof3" class="prof3">Маляр-штукатур</a></li>
+				<li><a href="#prof4" class="prof4">Электрик</a></li>
+				<li><a href="#prof5" class="prof5">Слесарь</a></li>
+			</ul>
+		</nav>
+		<div id="prof1" class="vacancy selected">
+			<h4>Разнорабочий</h4>
+			<p>зарплата:</p>
+			<p>30 000 - 45 000 грн.</p>
+			<button type="button" class="popup_show" onclick="popUpShow()">Хочу Эту Работу</button>
+		</div>
+		<div id="prof2" class="vacancy">
+			<h4>Сварщик</h4>
+			<p>зарплата:</p>
+			<p>40 000 - 60 000 грн.</p>
+			<button type="button" class="popup_show" onclick="popUpShow()">Хочу Эту Работу</button>
+		</div>
+		<div id="prof3" class="vacancy">
+			<h4>Маляр-штукатур</h4>
+			<p>зарплата:</p>
+			<p>30 000 - 40 000 грн.</p>
+			<button type="button" class="popup_show" onclick="popUpShow()">Хочу Эту Работу</button>
+		</div>
+		<div id="prof4" class="vacancy">
+			<h4>Электрик</h4>
+			<p>зарплата:</p>
+			<p>35 000 - 50 000 грн.</p>
+			<button type="button" class="popup_show" onclick="popUpShow()">Хочу Эту Работу</button>
+		</div>
+		<div id="prof5" class="vacancy">
+			<h4>Слесарь</h4>
+			<p>зарплата:</p>
+			<p>30 000 - 40 000 грн.</p>
+			<button type="button" class="popup_show" onclick="popUpShow()">Хочу Эту Работу</button>
+		</div>
+	</section>
+	<section id="section-3"><!-- Second Form -->
+		<h2>Не упускайте свой шанс!</h2>
+		<form method="post" id="form2" class="form">
+			<fieldset form="form2">
+				<legend>Оставьте заявку и мы обязательно Вам перезвоним</legend>
+				<input type="text" name="name" placeholder="Введите ваше имя" required>
+				<input type="tel" name="phone" placeholder="Введите ваш телефон: (xxx) xxx xxxx" title="Формат ввода: (xxx) xxx xxxx" pattern="\([0-9]{3}\)\s[0-9]{3}\s[0-9]{4}" required>
+				<input type="email" name="email" placeholder="Введите ваш email" title="Введите действующий email" required>
+			</fieldset>
+			<input type="submit" name="submit" value="Оставить Заявку">
+		</form>
+	</section>
+	<section id="section-4"><!-- Four Steps -->
+		<h2>Сколько времени Вы готовы потратить,<br>чтобы устроиться на работу?</h2>
+		<div class="steps_flex">
+			<div class="self step">
+				<h4>Самостоятельное трудоустройство</h4>
+				<table>
+					<tr>
+						<td class="gray">1.</td>
+						<td>поиск вакансии на зарубежных ресурсах</td>
+					</tr>
+					<tr>
+						<td class="gray">2.</td>
+						<td>оформление визы - <strong>180$</strong></td>
+					</tr>
+					<tr>
+						<td class="gray">3.</td>
+						<td>оформление страховки - <strong>100$</strong></td>
+					</tr>
+					<tr>
+						<td class="gray">4.</td>
+						<td>покупка билетов - <strong>700$</strong></td>
+					</tr>
+					<tr>
+						<td class="gray">5.</td>
+						<td>подбор и съем жилья - <strong>700$</strong></td>
+					</tr>
+					<tr>
+						<td class="gray">6.</td>
+						<td>прохождение собеседования</td>
+					</tr>
+					<tr>
+						<td class="gray">7.</td>
+						<td>ожидание решения</td>
+					</tr>
+					<tr>
+						<td class="gray">8.</td>
+						<td>подписание договора</td>
+					</tr>
+				</table>
+				<mark class="bronze">Вы потратите 2 месяца и свыше 2000$.<br>И нет гарантии, что найдете работу!</mark>
+			</div>
+			<div class="four step">
+				<h4>Трудоустройство в 4 шага</h4>
+				<table>
+					<tr>
+						<td class="gray">1.</td>
+						<td>пройдите собеседование по скайпу</td>
+					</tr>
+					<tr>
+						<td class="gray">2.</td>
+						<td>подпишите контракт удаленно</td>
+					</tr>
+					<tr>
+						<td class="gray">3.</td>
+						<td>виза, перелет и проживание за счет работодателя</td>
+					</tr>
+					<tr>
+						<td class="gray">4.</td>
+						<td>работа по контракту</td>
+					</tr>
+				</table>
+				<button type="button" class="popup_show" onclick="popUpShow()">Оставить Заявку</button>
+			</div>
+		</div>
+	</section>
+	<section id="section-5"><!-- Six Reasons -->
+		<h2>6 причин работать в Израиле</h2>
+		<ul class="reasons_flex">
+			<li>
+				<h4>Легальная работа</h4>
+				<p>Вы работаете по контракту, где прописаны все обязательства обеих сторон</p>
+			</li>
+			<li>
+				<h4>Лучшие вакансии</h4>
+				<p>Мы предлагаем высокооплачиваемую работу в хороших условиях</p>
+			</li>
+			<li>
+				<h4>Экономия денег</h4>
+				<p>Вы не тратитесь на проживание и питание, что позволяет Вам экономить свой доход для других целей</p>
+			</li>
+			<li>
+				<h4>Высокий зароботок</h4>
+				<p>Минимальная зарплата 1500$ + щедрые чаевые каждый месяц с возможностью карьерного роста</p>
+			</li>
+			<li>
+				<h4>Все развлечения Израиля</h4>
+				<p>Вы будете жить в одном из самых красивых и развитых городов мира, где лето длится 365 дней в году</p>
+			</li>
+			<li>
+				<h4>Гарантии</h4>
+				<p>В случае увольнения у Вас есть 30 дней на поиск новой работы или полностью оплачиваемый перелет домой</p>
+			</li>
+		</ul>
+	</section>
+	<section id="section-6"><!-- Profit Table -->
+		<h2>Почему работа в Израиле выгодна для Вас?</h2>
+		<table class="profit_table">
+			<thead>
+				<tr>
+					<th></th>
+					<th>Обычная работа</th>
+					<th>Работа в Израиле</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td></td>
+					<td class="gray">Каждое хмурое утро Вы думаете, что достойны лучшего и большего, но продолжаете довольствоваться тем, что есть.
+					</td>
+					<td class="bronze">Вы живете в одном из лучших городов планеты, где солнце светит 365 дней в году, занимаясь любимым делом.
+					</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td class="gray">Средняя зарплата:</td>
+					<td>450-550 $</td>
+					<td>от 1500 $</td>
+				</tr>
+				<tr>
+					<td class="gray">Расходы на питание:</td>
+					<td>150-200 $</td>
+					<td class="gold">бесплатно</td>
+				</tr>
+				<tr>
+					<td class="gray">Расходы на транспорт:</td>
+					<td>50 $</td>
+					<td class="gold">бесплатно</td>
+				</tr>
+				<tr>
+					<td class="gray">Расходы на жилье:</td>
+					<td>50-400 $</td>
+					<td class="gold">бесплатно</td>
+				</tr>
+				<tr>
+					<td class="gray">Ежемесячные накопления:</td>
+					<td>0 $</td>
+					<td>до 1000 $</td>
+				</tr>
+			</tbody>
+		</table>
+		<i class="gray"><span class="red">*</span> курс доллара по НБУ</i>
+	</section>
+	<section id="section-7"><!-- Passport and Third Form -->
+		<h2>Всего 1 документ для работы в Израиле</h2>
+		<div class="passport">
+			<p>Нужен только загранпаспорт</p>
+			<img src="image/passport.png" alt="Паспорт">
+		</div>
+		<form method="post" id="form3" class="form">
+			<fieldset form="form3">
+				<legend>Оставьте заявку и мы обязательно перезвоним</legend>
+				<input type="text" name="name" placeholder="Введите ваше имя" required>
+				<input type="tel" name="phone" placeholder="Введите ваш телефон: (xxx) xxx xxxx" title="Формат ввода: (xxx) xxx xxxx" pattern="\([0-9]{3}\)\s[0-9]{3}\s[0-9]{4}" required>
+				<input type="email" name="email" placeholder="Введите ваш email" title="Введите действующий email" required>
+			</fieldset>
+			<input type="submit" name="submit" value="Оставить Заявку">
+		</form>
+	</section>
+	<section id="section-8"><!-- Guarantees -->
+		<h2>Наши гарантии</h2>
+		<article>
+			<h3>1&ensp;&ensp; Гарантия Результата</h3>
+			<p>Оплата наших услуг только после подписания контракта а работодателем</p>
+			<h3>2&ensp;&ensp; Высокая Зарплата</h3>
+			<p>Мы предлагаем самые выгодные вакансии:<br>зарплата в среднем выше на 200-300$</p>
+			<h3>3&ensp;&ensp; Поддержка в Израиле</h3>
+			<p>Если у Вас возникли проблемы, Вы всегда можете связаться с нами удобным для Вас способом. У нас есть представитель в Израиле, а также Вы можете связаться с нашим офисом</p>
+		</article>
+	</section>
+	<section id="section-9"><!-- Chart -->
+		<h2>От заявки на сайте до работы в Израиле<br>&ndash;<br>1 месяц</h2>
+		<div class="chart_flex">
+			<div class="data-left">
+				<p class="gray">1 день</p>
+				<p class="black">С Вами связывается наш менеджер для консультации</p>
+				<p class="gray">1&ndash;3 дня</p>
+				<p class="black">Вы проходите собеседование по скайпу с нашим агентом</p>
+				<p class="gray">1&ndash;3 дня</p>
+				<p class="black">Вы проходите собеседование по скайпу с работодателем</p>
+				<p class="gray last">10&ndash;15 дней</p>
+				<p class="black last">Вылет в Израиль</p>
+				<i class="gray"><span class="red">*</span> сроки могут отличаться<br>в зависимости от конкретной ситуации</i>
+			</div>
+			<div class="data-right">
+				<p class="gray">1 день</p>
+				<p class="black">Вы оставляете заявку на сайте</p>
+				<p class="gray">1&ndash;3 дня</p>
+				<p class="black">Вы заполняете анкету и высылаете ее нам</p>
+				<p class="gray">5&ndash;10 дней</p>
+				<p class="black">Мы подбираем для Вас вакансию или ищем альтернативы</p>
+				<p class="gray">1&ndash;2 дня</p>
+				<p class="black">Вы оплачиваете наши услуги</p>
+			</div>
+		</div>
+	</section>
+	<section id="section-10"><!-- Last Form #4-->
+		<div class="last_form_flex">
+			<div class="form_left_title_flex">
+				<h2>Успейте оставить<br>заявку!</h2>
+				<p>Успей оставить заявку и получи<br>высокооплачиваемую работу в Израиле</p>
+			</div>
+			<form method="post" id="form4" class="form">
+				<fieldset form="form4">
+					<legend><strong>Оставьте заявку</strong><br>и наш менеджер свяжется с Вами в ближайшее время</legend>
+					<input type="text" name="name" placeholder="Введите ваше имя" required>
+					<input type="tel" name="phone" placeholder="Введите ваш телефон: (xxx) xxx xxxx" title="Формат ввода: (xxx) xxx xxxx" pattern="\([0-9]{3}\)\s[0-9]{3}\s[0-9]{4}" required>
+					<input type="email" name="email" placeholder="Введите ваш email" title="Введите действующий email" required>
+				</fieldset>
+				<input type="submit" name="submit" value="Оставить Заявку">
+			</form>
+		</div>
+	</section>
+	<footer><!-- Main Footer -->
+		<div class="copyright">
+			<span>+38 098 361 49 83</span>
+			<p>&copy; 2016 rabota-israel.org.ua</p>
+		</div>
+	</footer>
+	<div id="popup" class="popup"><!-- Popup for Form Sender -->
+		<div class="popup_block">
+			<button type="button" class="popup_hide" onclick="popUpHide()">
+				<img src="image/cl_button.png" alt="Закрыть диалоговое окно">
+			</button>
+			<h3 class="succeeded">Ваша заявка успешно отправлена!</h3>
+			<h3 class="failed">Что-то пошло не так.<br>Попробуйте еще раз.</h3>
+			<form method="post" id="form_popup" class="form form_popup">
+				<fieldset form="form_popup">
+					<legend>Заполните форму и мы обязательно свяжемся с Вами</legend>
+					<input type="text" class="name-field" name="name" placeholder="Введите ваше имя" required>
+					<input type="tel" class="phone-field" name="phone" placeholder="Введите ваш телефон: (xxx) xxx xxxx" title="Формат ввода: (xxx) xxx xxxx" pattern="\([0-9]{3}\)\s[0-9]{3}\s[0-9]{4}" required>
+					<input type="email" class="email-field" name="email" placeholder="Введите ваш email" title="Введите действующий email" required>
+				</fieldset>
+				<input type="submit" class="send-form" name="submit" value="Оставить Заявку">
+			</form>
+		</div>
+	</div>
+	<script>var scr = {"scripts":[
+		{"src" : "js/jquery-3.1.0.min.js", "async" : false},
+		{"src" : "js/script.min.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+</body>
+</html>
