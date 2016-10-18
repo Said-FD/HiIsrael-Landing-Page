@@ -91,11 +91,11 @@ $(document).ready(function() {
 	// Popup Show Function //
 	function popUpShow() {
 		$('#popup').fadeIn();
-		$('body').css({'overflow':'hidden'});
+		// $('body').css({'overflow':'hidden'});
 	}
 
 	// Popup Hide Function //
 	function popUpHide() {
 		$('#popup').fadeOut();
-		$('body').css({'overflow':'visible'});
+		// $('body').css({'overflow':'visible'});
 	}
