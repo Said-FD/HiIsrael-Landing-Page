@@ -57,6 +57,7 @@ section {
 }
 
 legend {
+	margin: 0 auto;
 	text-align: center;
 	font-size: 1.4rem;
 	font-weight: 300;
@@ -97,6 +98,56 @@ button.popup_show {
 	flex-flow: row wrap;
 	justify-content: space-around;
 }
+
+/* Flexbox Backup for IE9+ */
+.no-flexbox [class$='_flex'] {
+	display: block;
+	margin: 0 auto;
+}
+
+.no-flexbox [class$='_flex']::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.no-flexbox .logo_top,
+.no-flexbox .menu_top,
+.no-flexbox .phone_top,
+.no-flexbox .menu_flex {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.no-flexbox .menu_flex li {
+	display: inline-block;
+}
+
+.no-flexbox .phone_top {
+	visibility: hidden;
+}
+
+.no-flexbox .self {
+	display: block;
+	float: left;
+}
+
+.no-flexbox .four {
+	display: block;
+	float: right;
+}
+
+.no-flexbox .reasons_flex li {
+	display: inline-block;
+	float: left;
+}
+
+.no-flexbox #section-9 {
+	display: none;
+}
+/* End Flexbox Backup */
 
 .menu_flex li {
 	margin: 10px;
@@ -861,6 +912,19 @@ footer {
 	.self mark {
 		display: block;
 		text-align: center;
+	}
+
+	.no-flexbox .steps_flex .step {
+		float: none;
+		margin: 0 auto;
+	}
+
+	.no-flexbox .steps_flex .self {
+		margin-bottom: 1rem;
+	}
+
+	.no-flexbox .reasons_flex li {
+		float: none;
 	}
 
 	.profit_table {
